@@ -20,6 +20,7 @@ public class FinancialSummaryResponse {
     private List<FinancialGoalDto> achievedGoals;
     private List<CategorySummaryDto> expensesByCategory;
     private List<CategorySummaryDto> incomesByCategory;
+    private String currency = "BRL"; // Moeda padrão
     
     @Data
     @Builder
