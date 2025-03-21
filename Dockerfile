@@ -8,7 +8,7 @@ RUN mvn dependency:go-offline
 
 # Copiar código-fonte e compilar
 COPY src ./src
-RUN mvn package -DskipTests
+RUN mvn package -DskipTests -Dmaven.test.skip=true
 
 # Imagem final
 FROM openjdk:17-jdk-slim
